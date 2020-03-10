@@ -21,7 +21,7 @@
 
 <!-- Header Container
 ================================================== -->
-<header id="header-container" class="fullwidth">
+<header id="header-container">
 
 	<!-- Header -->
 	<div id="header">
@@ -286,18 +286,23 @@
 
 <!-- Banner
 ================================================== -->
-<div class="main-search-container full-height alt-search-box centered" data-background-image="images/listeo_bg3.jpg">
+<div class="main-search-container centered" data-background-image="images/main-search-background-01.jpg">
 	<div class="main-search-inner">
 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
+					<h2>
+						Find Nearby 
+						<!-- Typed words can be configured in script settings at the bottom of this HTML file -->
+						<span class="typed-words"></span>
+					</h2>
+					<h4>Expolore top-rated attractions, activities and more</h4>
 
 					<div class="main-search-input">
 
-						<div class="main-search-input-headline">
-							<h2>Find deals for any season</h2>
-							<h4>From cozy country homes to funky city apartments!</h4>
+						<div class="main-search-input-item">
+							<input type="text" placeholder="What are you looking for?" value=""/>
 						</div>
 
 						<div class="main-search-input-item location">
@@ -305,11 +310,6 @@
 								<input id="autocomplete-input" type="text" placeholder="Location">
 							</div>
 							<a href="#"><i class="fa fa-map-marker"></i></a>
-						</div>
-
-						<div class="main-search-input-item search-input-icon">
-							<input type="text" placeholder="Check-In - Check-Out" id="booking-date-search" >
-							<i class="fa fa-calendar"></i>
 						</div>
 
 						<div class="main-search-input-item">
@@ -329,6 +329,41 @@
 				</div>
 			</div>
 			
+			<!-- Features Categories -->
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="highlighted-categories-headline">Or browse featured categories:</h5>
+					  
+					<div class="highlighted-categories">
+						<!-- Box -->
+						<a href="listings-list-with-sidebar.html" class="highlighted-category">
+					    	<i class="im im-icon-Home"></i>
+					    	<h4>Apartments</h4>
+						</a>	
+
+						<!-- Box -->
+						<a href="listings-list-full-width.html" class="highlighted-category">
+					    	<i class="im im-icon-Hamburger"></i>
+					    	<h4>Eat &amp; Drink</h4>
+						</a>	
+
+						<!-- Box -->
+						<a href="listings-half-screen-map-list.html" class="highlighted-category">
+					    	<i class="im im-icon-Electric-Guitar"></i>
+					    	<h4>Events</h4>
+						</a>	
+
+						<!-- Box -->
+						<a href="listings-half-screen-map-list.html" class="highlighted-category">
+					    	<i class="im im-icon-Dumbbell"></i>
+					    	<h4>Fitness</h4>
+						</a>		
+					</div>
+					
+				</div>
+			</div>
+			<!-- Featured Categories - End -->
+
 		</div>
 
 	</div>
@@ -337,79 +372,71 @@
 
 <!-- Content
 ================================================== -->
-
-<!-- Container -->
 <div class="container">
 	<div class="row">
 
 		<div class="col-md-12">
-			<h3 class="headline centered margin-bottom-35 margin-top-70">
-				<strong class="headline-with-separator">Trending Destinations</strong>
-				<span>Top Destinations to Visit in 2019</span></h3>
-		</div>
-		
-		<div class="col-md-6">
-
-			<!-- Image Box -->
-			<a href="listings-list-with-sidebar.html" class="img-box alternative-imagebox" data-background-image="images/popular-location-01.jpg">
-				<div class="img-box-content visible">
-					<h4>New York </h4>
-					<span>14 Listings</span>
-				</div>
-			</a>
-
-		</div>	
-			
-		<div class="col-md-6">
-
-			<!-- Image Box -->
-			<a href="listings-list-with-sidebar.html" class="img-box alternative-imagebox" data-background-image="images/popular-location-02.jpg">
-				<div class="img-box-content visible">
-					<h4>Los Angeles</h4>
-					<span>24 Listings</span>
-				</div>
-			</a>
-
-		</div>	
-
-		<div class="col-md-4">
-			<!-- Image Box -->
-			<a href="listings-list-with-sidebar.html" class="img-box alternative-imagebox" data-background-image="images/popular-location-03.jpg">
-				<div class="img-box-content visible">
-					<h4>San Francisco </h4>
-					<span>12 Listings</span>
-				</div>
-			</a>
-		</div>	
-			
-		<div class="col-md-4">
-			<!-- Image Box -->
-			<a href="listings-list-with-sidebar.html" class="img-box alternative-imagebox" data-background-image="images/popular-location-04.jpg">
-				<div class="img-box-content visible">
-					<h4>Miami</h4>
-					<span>9 Listings</span>
-				</div>
-			</a>
-		</div>
-			
-		<div class="col-md-4">
-			<!-- Image Box -->
-			<a href="listings-list-with-sidebar.html" class="img-box alternative-imagebox" data-background-image="images/popular-location-05.jpg">
-				<div class="img-box-content visible">
-					<h4>Chicago</h4>
-					<span>5 Listings</span>
-				</div>
-			</a>
+			<h3 class="headline centered margin-top-75">
+				<strong class="headline-with-separator">Popular Categories</strong>
+			</h3>
 		</div>
 
+		<div class="col-md-12">
+			<div class="categories-boxes-container margin-top-5 margin-bottom-30">
+				
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Hamburger"></i>
+					<h4>Eat & Drink</h4>
+					<span class="category-box-counter">12</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im  im-icon-Sleeping"></i>
+					<h4>Hotels</h4>
+					<span class="category-box-counter">32</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Shopping-Bag"></i>
+					<h4>Shops</h4>
+					<span class="category-box-counter">11</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Cocktail"></i>
+					<h4>Nightlife</h4>
+					<span class="category-box-counter">15</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Electric-Guitar"></i>
+					<h4>Events</h4>
+					<span class="category-box-counter">21</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Dumbbell"></i>
+					<h4>Fitness</h4>
+					<span class="category-box-counter">28</span>
+				</a>
+
+			</div>
+		</div>
 	</div>
 </div>
-<!-- Container / End -->
+<!-- Category Boxes / End -->
 
 
 
-<!-- Most Visited Places -->
-<section class="fullwidth border-top margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#fff">
+
+<!-- Fullwidth Section -->
+<section class="fullwidth margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#f8f8f8">
 
 	<div class="container">
 		<div class="row">
@@ -417,137 +444,213 @@
 			<div class="col-md-12">
 				<h3 class="headline centered margin-bottom-45">
 					<strong class="headline-with-separator">Most Visited Places</strong>
-					<span>Discover top-rated local businesses</span>
+					<span>Discover Top-Rated Local Businesses</span>
 				</h3>
 			</div>
+
+			<div class="col-md-12">
+				<div class="simple-slick-carousel dots-nav">
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a href="listings-single-page.html" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-01.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+							
+							<div class="listing-item-content">
+								<span class="tag">Eat & Drink</span>
+								<h3>Tom's Restaurant <i class="verified-icon"></i></h3>
+								<span>964 School Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="3.5">
+							<div class="rating-counter">(12 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a href="listings-single-page.html" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-02.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Friday, August 10</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<span class="tag">Events</span>
+								<h3>Sticky Band</h3>
+								<span>Bishop Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="5.0">
+							<div class="rating-counter">(23 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->		
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a href="listings-single-page.html" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-03.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Starting from $59 per night</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<span class="tag">Hotels</span>
+								<h3>Hotel Govendor</h3>
+								<span>778 Country Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="2.0">
+							<div class="rating-counter">(17 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a href="listings-single-page.html" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-04.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<span class="tag">Eat & Drink</span>
+								<h3>Burger House <i class="verified-icon"></i></h3>
+								<span>2726 Shinn Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="5.0">
+							<div class="rating-counter">(31 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a href="listings-single-page.html" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-05.jpg" alt="">
+							<div class="listing-item-content">
+								<span class="tag">Other</span>
+								<h3>Airport</h3>
+								<span>1512 Duncan Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="3.5">
+							<div class="rating-counter">(46 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="carousel-item">
+					<a href="listings-single-page.html" class="listing-item-container">
+						<div class="listing-item">
+							<img src="images/listing-item-06.jpg" alt="">
+
+							<div class="listing-badge now-closed">Now Closed</div>
+
+							<div class="listing-item-content">
+								<span class="tag">Eat & Drink</span>
+								<h3>Think Coffee</h3>
+								<span>215 Terry Lane, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="4.5">
+							<div class="rating-counter">(15 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+				</div>
+				
+			</div>
+
 		</div>
 	</div>
-
-	<!-- Carousel / Start -->
-	<div class="simple-fw-slick-carousel dots-nav">
-
-		<!-- Listing Item -->
-		<div class="fw-carousel-item">
-			<a href="listings-single-page.html" class="listing-item-container compact">
-				<div class="listing-item">
-					<img src="images/listing-item-01.jpg" alt="">
-
-					<div class="listing-badge now-open">Now Open</div>
-
-					<div class="listing-item-content">
-						<div class="numerical-rating" data-rating="3.5"></div>
-						<h3>Tom's Restaurant</h3>
-						<span>964 School Street, New York</span>
-					</div>
-					<span class="like-icon"></span>
-				</div>
-			</a>
-		</div>
-		<!-- Listing Item / End -->
-
-		<!-- Listing Item -->
-		<div class="fw-carousel-item">
-			<a href="listings-single-page.html" class="listing-item-container compact">
-				<div class="listing-item">
-					<img src="images/listing-item-02.jpg" alt="">
-					<div class="listing-item-details">
-						<ul>
-							<li>Friday, August 10</li>
-						</ul>
-					</div>
-					<div class="listing-item-content">
-						<div class="numerical-rating" data-rating="5.0"></div>
-						<h3>Sticky Band</h3>
-						<span>Bishop Avenue, New York</span>
-					</div>
-					<span class="like-icon"></span>
-				</div>
-			</a>
-		</div>
-		<!-- Listing Item / End -->		
-
-		<!-- Listing Item -->
-		<div class="fw-carousel-item">
-			<a href="listings-single-page.html" class="listing-item-container compact">
-				<div class="listing-item">
-					<img src="images/listing-item-03.jpg" alt="">
-					<div class="listing-item-details">
-						<ul>
-							<li>Starting from $59 per night</li>
-						</ul>
-					</div>
-					<div class="listing-item-content">
-						<div class="numerical-rating" data-rating="2.0"></div>
-						<h3>Hotel Govendor</h3>
-						<span>778 Country Street, New York</span>
-					</div>
-					<span class="like-icon"></span>
-				</div>
-
-			</a>
-		</div>
-		<!-- Listing Item / End -->
-
-		<!-- Listing Item -->
-		<div class="fw-carousel-item">
-			<a href="listings-single-page.html" class="listing-item-container compact">
-				<div class="listing-item">
-					<img src="images/listing-item-04.jpg" alt="">
-
-					<div class="listing-badge now-open">Now Open</div>
-
-					<div class="listing-item-content">
-						<div class="numerical-rating" data-rating="5.0"></div>
-						<h3>Burger House</h3>
-						<span>2726 Shinn Street, New York</span>
-					</div>
-					<span class="like-icon"></span>
-				</div>
-			</a>
-		</div>
-		<!-- Listing Item / End -->
-
-		<!-- Listing Item -->
-		<div class="fw-carousel-item">
-			<a href="listings-single-page.html" class="listing-item-container compact">
-				<div class="listing-item">
-					<img src="images/listing-item-05.jpg" alt="">
-					<div class="listing-item-content">
-						<div class="numerical-rating" data-rating="3.5"></div>
-						<h3>Airport</h3>
-						<span>1512 Duncan Avenue, New York</span>
-					</div>
-					<span class="like-icon"></span>
-				</div>
-			</a>
-		</div>
-		<!-- Listing Item / End -->
-
-		<!-- Listing Item -->
-		<div class="fw-carousel-item">
-			<a href="listings-single-page.html" class="listing-item-container compact">
-				<div class="listing-item">
-					<img src="images/listing-item-06.jpg" alt="">
-
-					<div class="listing-badge now-closed">Now Closed</div>
-
-					<div class="listing-item-content">
-						<div class="numerical-rating" data-rating="4.5"></div>
-						<h3>Think Coffee</h3>
-						<span>215 Terry Lane, New York</span>
-					</div>
-					<span class="like-icon"></span>
-				</div>
-			</a>
-		</div>
-		<!-- Listing Item / End -->
-
-	</div>
-	<!-- Carousel / End -->
-
 
 </section>
 <!-- Fullwidth Section / End -->
+
+<section class="fullwidth padding-top-75 padding-bottom-30" data-background-color="#fff">
+	<!-- Info Section -->
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h3 class="headline centered headline-extra-spacing">
+					<strong class="headline-with-separator">What Our Users Say</strong>
+					<span class="margin-top-25">We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</span>
+				</h3>
+			</div>
+		</div>
+
+	</div>
+	<!-- Info Section / End -->
+
+	<!-- Categories Carousel -->
+	<div class="fullwidth-carousel-container margin-top-20 no-dots">
+		<div class="testimonial-carousel testimonials">
+
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation is on the runway heading towards a streamlined cloud solution user generated content.</div>
+				</div>
+				<div class="testimonial-author">
+					<img src="images/happy-client-01.jpg" alt="">
+					<h4>Jennie Smith <span>Coffee Shop Owner</span></h4>
+				</div>
+			</div>
+			
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop.</div>
+				</div>
+				<div class="testimonial-author">
+					<img src="images/happy-client-02.jpg" alt="">
+					<h4>Tom Baker <span>Clothing Store Owner</span></h4>
+				</div>
+			</div>
+
+			<!-- Item -->
+			<div class="fw-carousel-review">
+				<div class="testimonial-box">
+					<div class="testimonial">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view.</div>
+				</div>
+				<div class="testimonial-author">
+					<img src="images/happy-client-03.jpg" alt="">
+					<h4>Jack Paden <span>Restaurant Owner</span></h4>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Categories Carousel / End -->
+
+</section>
 
 
 
@@ -676,17 +779,6 @@
 <!-- Recent Blog Posts / End -->
 
 
-<!-- Flip banner -->
-<a href="listings-half-screen-map-list.html" class="flip-banner parallax" data-background="images/slider-bg-02.jpg" data-color="#f91942" data-color-opacity="0.85" data-img-width="2500" data-img-height="1666">
-	<div class="flip-banner-content">
-		<h2 class="flip-visible">Explore top-rated attractions nearby</h2>
-		<h2 class="flip-hidden">Browse Listings <i class="sl sl-icon-arrow-right"></i></h2>
-	</div>
-</a>
-<!-- Flip banner / End -->
-
-
-
 <!-- Footer
 ================================================== -->
 <div id="footer" class="sticky-footer">
@@ -776,27 +868,17 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 
 
-<!-- Google Autocomplete -->
-<script>
-  function initAutocomplete() {
-    var input = document.getElementById('autocomplete-input');
-    var autocomplete = new google.maps.places.Autocomplete(input);
+<!-- Leaflet // Docs: https://leafletjs.com/ -->
+<script src="scripts/leaflet.min.js"></script>
 
-    autocomplete.addListener('place_changed', function() {
-      var place = autocomplete.getPlace();
-      if (!place.geometry) {
-        return;
-      }
-    });
+<!-- Leaflet Maps Scripts -->
+<script src="scripts/leaflet-markercluster.min.js"></script>
+<script src="scripts/leaflet-gesture-handling.min.js"></script>
+<script src="scripts/leaflet-listeo.js"></script>
 
-	if ($('.main-search-input-item')[0]) {
-	    setTimeout(function(){ 
-	        $(".pac-container").prependTo("#autocomplete-container");
-	    }, 300);
-	}
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initAutocomplete"></script>
+<!-- Leaflet Geocoder + Search Autocomplete // Docs: https://github.com/perliedman/leaflet-control-geocoder -->
+<script src="scripts/leaflet-autocomplete.js"></script>
+<script src="scripts/leaflet-control-geocoder.js"></script>
 
 
 <!-- Typed Script -->
@@ -814,47 +896,36 @@ strings: ["Attractions"," Restaurants"," Hotels"],
 </script>
 
 
-<!-- Date Range Picker - docs: http://www.daterangepicker.com/ -->
-<script src="scripts/moment.min.js"></script>
-<script src="scripts/daterangepicker.js"></script>
+<!-- Style Switcher
+================================================== -->
+<script src="scripts/switcher.js"></script>
 
-<script>
-$(function() {
-
-    var start = moment().subtract(0, 'days');
-    var end = moment().add(2, 'days');
-
-    function cb(start, end) {
-        $('#booking-date-search').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-    }
-    cb(start, end);
-    $('#booking-date-search').daterangepicker({
-    	"opens": "right",
-	    "autoUpdateInput": true,
-	    "alwaysShowCalendars": true,
-        startDate: start,
-        endDate: end
-    }, cb);
-
-    cb(start, end);
-
-});
-
-// Calendar animation and visual settings
-$('#booking-date-search').on('show.daterangepicker', function(ev, picker) {
-	$('.daterangepicker').addClass('calendar-visible calendar-animated bordered-style');
-	$('.daterangepicker').removeClass('calendar-hidden');
-});
-$('#booking-date-search').on('hide.daterangepicker', function(ev, picker) {
-	$('.daterangepicker').removeClass('calendar-visible');
-	$('.daterangepicker').addClass('calendar-hidden');
-});
-
-$(window).on('load', function() {
-    $('#booking-date-search').val('');
-});
-</script>
-
+<div id="style-switcher">
+	<h2>Color Switcher <a href="#"><i class="sl sl-icon-settings"></i></a></h2>
+	
+	<div>
+		<ul class="colors" id="color1">
+			<li><a href="#" class="main" title="Main"></a></li>
+			<li><a href="#" class="blue" title="Blue"></a></li>
+			<li><a href="#" class="green" title="Green"></a></li>
+			<li><a href="#" class="orange" title="Orange"></a></li>
+			<li><a href="#" class="navy" title="Navy"></a></li>
+			<li><a href="#" class="yellow" title="Yellow"></a></li>
+			<li><a href="#" class="peach" title="Peach"></a></li>
+			<li><a href="#" class="beige" title="Beige"></a></li>
+			<li><a href="#" class="purple" title="Purple"></a></li>
+			<li><a href="#" class="celadon" title="Celadon"></a></li>
+			<li><a href="#" class="red" title="Red"></a></li>
+			<li><a href="#" class="brown" title="Brown"></a></li>
+			<li><a href="#" class="cherry" title="Cherry"></a></li>
+			<li><a href="#" class="cyan" title="Cyan"></a></li>
+			<li><a href="#" class="gray" title="Gray"></a></li>
+			<li><a href="#" class="olive" title="Olive"></a></li>
+		</ul>
+	</div>
+		
+</div>
+<!-- Style Switcher / End -->
 
 
 </body>
