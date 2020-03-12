@@ -2525,6 +2525,10 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 	content: "km";
 }
 
+.dollar-symbol > .range-output:after {
+	content: "$";
+}
+
 .data-radius-title {
 	font-style: normal;
 	font-size: 15px;
