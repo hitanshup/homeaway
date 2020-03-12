@@ -732,7 +732,7 @@ body .user-menu ul li a:hover,
 }
 
 #navigation.style-1 > ul > li > a.current,
-#navigation.style-1 > ul > li:hover > a { 
+#navigation.style-1 > ul > li:hover > a {
 	background: rgba(102, 103, 107, 0.06);
 	color: #66676b;
 }
@@ -794,7 +794,7 @@ body #navigation.style-1 ul ul li:hover ul li a:hover { color: #66676b; }
 	opacity: 0;
 }
 
-#navigation ul li .mega-menu ul { 
+#navigation ul li .mega-menu ul {
 	opacity: 0;
 	visibility: hidden;
 	transform: translate3d(0,0,0);
@@ -846,7 +846,7 @@ body #navigation.style-1 ul ul li:hover ul li a:hover { color: #66676b; }
 	opacity: 1;
 }
 
-#navigation ul li:hover .mega-menu ul a, 
+#navigation ul li:hover .mega-menu ul a,
 #navigation ul .mega-menu ul a {
     padding: 5px 0 !important;
     line-height: 22px !important;
@@ -1044,7 +1044,7 @@ body #navigation.style-1 ul ul li:hover ul li a:hover { color: #66676b; }
     .user-name span:after {
         bottom: -3px;
         right: -6px;
-    }   
+    }
 }
 
 body .dashboard-nav ul li a i.fa.fa-calendar-check-o:before,
@@ -1910,7 +1910,7 @@ body .typed-cursor.typed-cursor--blink.typed-fade-out{
 }
 
 @media (max-width: 768px) {
-    .typed-words { display: block; width: 100%; min-height: 46px; }  
+    .typed-words { display: block; width: 100%; min-height: 46px; }
     .typed-cursor { display: none; }
 }
 
@@ -2080,7 +2080,7 @@ body .typed-cursor.typed-cursor--blink.typed-fade-out{
 .gray-style .main-search-input-item { border-color: #e0e0e0; }
 
 /* Home Improvements */
-  
+
 .transparent-header .main-search-container  { height: auto; }
 
 .transparent-header .main-search-container .main-search-inner {
@@ -2109,7 +2109,7 @@ body .typed-cursor.typed-cursor--blink.typed-fade-out{
 .transparent-header .main-search-container h2 { color: #fff; }
 
 .transparent-header #header:not(.cloned) #navigation.style-1 > ul > li > a { color: #fff; }
-.transparent-header #header:not(.cloned) #navigation.style-1 > ul > li > a.current, 
+.transparent-header #header:not(.cloned) #navigation.style-1 > ul > li > a.current,
 .transparent-header #header:not(.cloned) #navigation.style-1 > ul > li:hover > a {
     background: #66676b;
     color: #fff;
@@ -2210,20 +2210,20 @@ body .typed-cursor.typed-cursor--blink.typed-fade-out{
 
     .transparent-header .mmenu-trigger { background-color: rgba(255,255,255,0.15); }
     .transparent-header .hamburger-inner, .transparent-header .hamburger-inner::before, .transparent-header .hamburger-inner::after {background: #fff; }
-    
+
     .transparent-header #header:not(.cloned) { border: none; }
     .transparent-header .main-search-container .main-search-inner { padding-top: 180px; padding-bottom: 80px; }
     .transparent-header .main-search-inner { text-align: left; }
     .transparent-header .main-search-input { margin-top: 30px; }
-    .main-search-input-item:last-child, 
-    .main-search-input .main-search-input-item:last-child, 
-    .main-search-input .main-search-input-item:nth-last-child(2), 
+    .main-search-input-item:last-child,
+    .main-search-input .main-search-input-item:last-child,
+    .main-search-input .main-search-input-item:nth-last-child(2),
     .main-search-input .main-search-input-item:nth-last-child(3) {
         border-right: none;
         padding-left: 0;
         padding-right: 0;
     }
-    
+
 }
 
 
@@ -5617,7 +5617,7 @@ h3 .listing-price i {
   font-size: 14px;
   margin-top: -15px;
 }
- 
+
 .uploadButton .uploadButton-input {
   opacity: 0;
   position: absolute;
@@ -5650,12 +5650,12 @@ h3 .listing-price i {
     background-color: #ededed;
     border-radius: 50px;
 }
- 
+
 .uploadButton .uploadButton-button:hover {
     background-color: #66676b;
     color: #fff;
 }
- 
+
 .uploadButton .uploadButton-file-name {
     flex-grow: 1;
     display: flex;
@@ -5898,7 +5898,7 @@ input#date-picker:hover {
   border: none;
 }
 
-.daterangepicker .calendar-table .next span, 
+.daterangepicker .calendar-table .next span,
 .daterangepicker .calendar-table .prev span {
   color: #fff;
   border: solid #aaa;
@@ -5924,7 +5924,7 @@ input#date-picker:hover {
   -webkit-transform: rotate(135deg);
 }
 
-.daterangepicker .calendar-table th, 
+.daterangepicker .calendar-table th,
 .daterangepicker .calendar-table td {
   white-space: nowrap;
   text-align: center;
@@ -6154,7 +6154,7 @@ input#date-picker:hover {
 	float: right;
 	background: #fff;
 	border-radius: 3px;
-	cursor: pointer; 
+	cursor: pointer;
 	padding: 6px;
 	display: inline-block;
 	position: relative;
@@ -6200,7 +6200,7 @@ input#date-picker:hover {
 
 #booking-date-range i {
 	color: #999;
-	background-color: 
+	background-color:
 }
 
 /* Booking Requests Filter / End */
@@ -6787,7 +6787,7 @@ a.send-message-to-owner.button {
         border: none;
         margin-top: -10px;
     }
-    
+
     body .listing-nav li a {
     	padding: 2px 0;
     	margin: 0;
@@ -6797,8 +6797,8 @@ a.send-message-to-owner.button {
     body .listing-nav li:first-child a {
     	font-weight: 600;
     }
-    
-    #titlebar.listing-titlebar h1, 
+
+    #titlebar.listing-titlebar h1,
     #titlebar.listing-titlebar h2 {
         font-size: 22px;
     }
@@ -11362,8 +11362,8 @@ span.like-icon {
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.category-small-box:hover .category-box-counter { 
-    color: #fff;  
+.category-small-box:hover .category-box-counter {
+    color: #fff;
     background-color: rgba(0,0,0,0.15);
 }
 
@@ -13003,7 +13003,7 @@ input:checked + .slider:before {
 	padding: 12px 17px;
 }
 
-.single-slot-right { 
+.single-slot-right {
     flex: 0 0 auto;
     background-color: #eee;
     position: relative;
@@ -13161,7 +13161,7 @@ input[type="time"]::-webkit-clear-button{
 .add-slot-inputs input::-webkit-outer-spin-button,
 .add-slot-inputs input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0; 
+    margin: 0;
 }
 
 .add-slot-inputs input{ padding-right: 4px; }
@@ -13241,7 +13241,7 @@ input[type="time"]::-webkit-clear-button{
 	font-weight: 700;
 	text-align: center;
 }
-.plusminus input[type="number"]::-webkit-outer-spin-button, 
+.plusminus input[type="number"]::-webkit-outer-spin-button,
 .plusminus input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
@@ -13328,8 +13328,8 @@ input[type="time"]::-webkit-clear-button{
 	.add-slot-btn button {
 		width: 100%;
 		margin-left: 0;
-		margin-top: 8px; 
-		background-color: rgba(255,255,255,0.15); 
+		margin-top: 8px;
+		background-color: rgba(255,255,255,0.15);
 		color: #fff;
 		padding: 3px 0;
 	}
@@ -13707,7 +13707,7 @@ input[type="time"]::-webkit-clear-button{
 	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
 	border-radius: 4px;
 	}
-	
+
 .leaflet-bar a,
 .leaflet-bar a:hover {
 
@@ -13718,7 +13718,7 @@ input[type="time"]::-webkit-clear-button{
 	text-align: center;
 	text-decoration: none;
 }
-	
+
 .leaflet-bar a,
 .leaflet-control-layers-toggle {
 	background-position: 50% 50%;
@@ -13916,7 +13916,7 @@ body #submit_map {
 }
 
 .marker-container:hover .marker-card,
-.clicked .marker-container .marker-card, 
+.clicked .marker-container .marker-card,
 .map-marker-container.clicked .marker-card { transform: rotateY(180deg) translateY(-4px); }
 
 
@@ -13990,7 +13990,7 @@ body #submit_map {
     padding: 16px 22px;
     width: 100%;
     z-index: 50;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -14067,7 +14067,7 @@ body #submit_map {
 	border-radius: 50%;
 	-webkit-text-stroke: 1px #fff;
 	}
-	
+
 .leaflet-container a.leaflet-popup-close-button:hover {
 	color: #fff;
 	background-color: #f91942;
@@ -14247,7 +14247,7 @@ body #submit_map {
 	position: relative;
 }
 
-	
+
 .marker-cluster-small div,
 .marker-cluster-medium div,
 .marker-cluster-large div {
@@ -14398,7 +14398,7 @@ body #submit_map {
 }
 .leaflet-control-geocoder-address-context {
   color: #666;
-}	
+}
 
 
 /* Touch Gestures
@@ -14470,14 +14470,14 @@ body #submit_map {
 	display: block;
 }
 
-#leaflet-geocode-cont ul { 
+#leaflet-geocode-cont ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
 
-#leaflet-geocode-cont ul li { 
+#leaflet-geocode-cont ul li {
 	color: #888;
 	font-size: 13px;
 	font-weight: 400;
@@ -14494,7 +14494,7 @@ overflow: hidden;
 text-overflow: ellipsis; */
 }
 
-#leaflet-geocode-cont ul li:before { 
+#leaflet-geocode-cont ul li:before {
 	content: "\f041";
 	font-family: "FontAwesome";
 	font-size: 14px;
@@ -14508,9 +14508,9 @@ text-overflow: ellipsis; */
 
 #leaflet-geocode-cont ul li:hover:before {
 	color: #a0a0a0;
-} 
+}
 
-#leaflet-geocode-cont ul li:last-child { 
+#leaflet-geocode-cont ul li:last-child {
 	border: none;
 	border-radius: 0 0 4px 4px;
 }
@@ -14518,7 +14518,7 @@ text-overflow: ellipsis; */
 #leaflet-geocode-cont ul li.selected,
 #leaflet-geocode-cont ul li:hover {
 	background: #fafafa;
-} 
+}
 
 #leaflet-geocode-cont span.highlight {
 	color: #222;
@@ -14549,9 +14549,9 @@ text-overflow: ellipsis; */
 	transform: translateX(0);
 }
 
-.main-search-container.alt-search-box #leaflet-geocode-cont { top: 51px; } 
+.main-search-container.alt-search-box #leaflet-geocode-cont { top: 51px; }
 .main-search-input.gray-style .type-and-hit-enter,
-.main-search-inner .type-and-hit-enter { top: 11px; right: 25px; } 
+.main-search-inner .type-and-hit-enter { top: 11px; right: 25px; }
 .main-search-container.alt-search-box .type-and-hit-enter { right: 19px; top: 14px; }
 
 
@@ -14565,23 +14565,23 @@ text-overflow: ellipsis; */
             z-index: 10;
             border-radius: 4px;
         }
-        
+
         .main-search-input.gray-style .osm-dropdown-active #leaflet-geocode-cont {
             box-shadow: none;
             border: 1px solid #e0e0e0;
         }
-        
+
         .main-search-input .osm-dropdown-active #leaflet-geocode-cont ul li:first-child,
         .main-search-container:not(.alt-search-box) .osm-dropdown-active #leaflet-geocode-cont ul li:first-child { border-top: 1px solid #e8e8e8; }
 }
 
 @media (max-width: 992px) {
-    .main-search-container:not(.alt-search-box) #leaflet-geocode-cont { top: 52px; } 
+    .main-search-container:not(.alt-search-box) #leaflet-geocode-cont { top: 52px; }
     .main-search-input.gray-style .type-and-hit-enter,
-    .main-search-container:not(.alt-search-box) .type-and-hit-enter { top: 16px; right: 20px; } 
+    .main-search-container:not(.alt-search-box) .type-and-hit-enter { top: 16px; right: 20px; }
 }
 
-#leaflet-geocode-cont ul li.powered-by-osm { 
+#leaflet-geocode-cont ul li.powered-by-osm {
 	display: block;
 	padding: 9px 0;
 	padding-right: 20px;
@@ -14596,7 +14596,7 @@ text-overflow: ellipsis; */
 	color: #333;
 	position: relative;
 	padding-left: 26px;
-} 
+}
 
 #leaflet-geocode-cont ul li.powered-by-osm strong:before {
 	background-image: url(https://i.imgur.com/YaiaYGw.png);
@@ -17057,7 +17057,7 @@ body .category-box-btn:hover {
 		font-size: 22px;
 		line-height: 36px;
 	}
-	
+
 	/* Headline Separator */
 	strong.headline-with-separator,
 	.headline-with-separator {
