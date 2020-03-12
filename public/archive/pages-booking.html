@@ -118,7 +118,7 @@
 							</ul>
 						</li>
 
-						<li><a href="#" class="current">Pages</a>
+						<li><a class="current" href="#">Pages</a>
 							<div class="mega-menu mobile-styles three-columns">
 
 									<div class="mega-menu-section">
@@ -272,104 +272,178 @@
 <!-- Header Container / End -->
 
 
+<!-- Titlebar
+================================================== -->
+<div id="titlebar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>Booking</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Booking</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <!-- Content
 ================================================== -->
 
-<!-- Map Container -->
-<div class="contact-map margin-bottom-60">
-
-	<!-- Google Maps -->
-	<div id="singleListingMap-container">
-		<div id="singleListingMap" data-latitude="40.70437865245596" data-longitude="-73.98674011230469" data-map-icon="im im-icon-Map2"></div>
-		<a href="#" id="streetView">Street View</a>
-	</div>
-	<!-- Google Maps / End -->
-
-	<!-- Office -->
-	<div class="address-box-container">
-		<div class="address-container" data-background-image="images/our-office.jpg">
-			<div class="office-address">
-				<h3>Our Office</h3>
-				<ul>
-					<li>John Street 304</li>
-					<li>New York</li>
-					<li>Phone (123) 123-456 </li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- Office / End -->
-
-</div>
-<div class="clearfix"></div>
-<!-- Map Container / End -->
-
-
-<!-- Container / Start -->
+<!-- Container -->
 <div class="container">
-
 	<div class="row">
 
-		<!-- Contact Details -->
-		<div class="col-md-4">
+		<!-- Content
+		================================================== -->
+		<div class="col-lg-8 col-md-8 padding-right-30">
 
-			<h4 class="headline margin-bottom-30">Find Us There</h4>
+			<h3 class="margin-top-0 margin-bottom-30">Personal Details</h3>
 
-			<!-- Contact Details -->
-			<div class="sidebar-textbox">
-				<p>Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services.</p>
+			<div class="row">
 
-				<ul class="contact-details">
-					<li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Fax"></i> <strong>Fax:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.example.com</a></span></li>
-					<li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">office@example.com</a></span></li>
-				</ul>
+				<div class="col-md-6">
+					<label>First Name</label>
+					<input type="text" value="">
+				</div>
+
+				<div class="col-md-6">
+					<label>Last Name</label>
+					<input type="text" value="">
+				</div>
+
+				<div class="col-md-6">
+					<div class="input-with-icon medium-icons">
+						<label>E-Mail Address</label>
+						<input type="text" value="">
+						<i class="im im-icon-Mail"></i>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="input-with-icon medium-icons">
+						<label>Phone</label>
+						<input type="text" value="">
+						<i class="im im-icon-Phone-2"></i>
+					</div>
+				</div>
+
 			</div>
 
+
+			<h3 class="margin-top-55 margin-bottom-30">Payment Method</h3>
+
+			<!-- Payment Methods Accordion -->
+			<div class="payment">
+
+				<div class="payment-tab payment-tab-active">
+					<div class="payment-tab-trigger">
+						<input checked id="paypal" name="cardType" type="radio" value="paypal">
+						<label for="paypal">PayPal</label>
+						<img class="payment-logo paypal" src="https://i.imgur.com/ApBxkXU.png" alt="">
+					</div>
+
+					<div class="payment-tab-content">
+						<p>You will be redirected to PayPal to complete payment.</p>
+					</div>
+				</div>
+
+
+				<div class="payment-tab">
+					<div class="payment-tab-trigger">
+						<input type="radio" name="cardType" id="creditCart" value="creditCard">
+						<label for="creditCart">Credit / Debit Card</label>
+						<img class="payment-logo" src="https://i.imgur.com/IHEKLgm.png" alt="">
+					</div>
+
+					<div class="payment-tab-content">
+						<div class="row">
+
+							<div class="col-md-6">
+								<div class="card-label">
+									<label for="nameOnCard">Name on Card</label>
+									<input id="nameOnCard" name="nameOnCard" required type="text">
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="card-label">
+									<label for="cardNumber">Card Number</label>
+									<input id="cardNumber" name="cardNumber" placeholder="1234  5678  9876  5432" required type="text">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card-label">
+									<label for="expirynDate">Expiry Month</label>
+									<input id="expiryDate" placeholder="MM" required type="text">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card-label">
+									<label for="expiryDate">Expiry Year</label>
+									<input id="expirynDate" placeholder="YY" required type="text">
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card-label">
+									<label for="cvv">CVV</label>
+									<input id="cvv" required type="text">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Payment Methods Accordion / End -->
+		
+			<a href="pages-booking-confirmation.html" class="button booking-confirmation-btn margin-top-40 margin-bottom-65">Confirm and Pay</a>
 		</div>
 
-		<!-- Contact Form -->
-		<div class="col-md-8">
 
-			<section id="contact">
-				<h4 class="headline margin-bottom-35">Contact Form</h4>
+		<!-- Sidebar
+		================================================== -->
+		<div class="col-lg-4 col-md-4 margin-top-0 margin-bottom-60">
 
-				<div id="contact-message"></div> 
+			<!-- Booking Summary -->
+			<div class="listing-item-container compact order-summary-widget">
+				<div class="listing-item">
+					<img src="images/listing-item-04.jpg" alt="">
 
-					<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
-
-					<div class="row">
-						<div class="col-md-6">
-							<div>
-								<input name="name" type="text" id="name" placeholder="Your Name" required="required" />
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div>
-								<input name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
-							</div>
-						</div>
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="5.0"></div>
+						<h3>Burger House</h3>
+						<span>2726 Shinn Street, New York</span>
 					</div>
+				</div>
+			</div>
+			<div class="boxed-widget opening-hours summary margin-top-0">
+				<h3><i class="fa fa-calendar-check-o"></i> Booking Summary</h3>
+				<ul>
+					<li>Date <span>10/20/2019</span></li>
+					<li>Hour <span>5:30 PM</span></li>
+					<li>Guests <span>2 Adults</span></li>
+					<li class="total-costs">Total Cost <span>$9.00</span></li>
+				</ul>
 
-					<div>
-						<input name="subject" type="text" id="subject" placeholder="Subject" required="required" />
-					</div>
+			</div>
+			<!-- Booking Summary / End -->
 
-					<div>
-						<textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
-					</div>
-
-					<input type="submit" class="submit button" id="submit" value="Submit Message" />
-
-					</form>
-			</section>
 		</div>
-		<!-- Contact Form / End -->
 
 	</div>
-
 </div>
 <!-- Container / End -->
 
@@ -377,7 +451,7 @@
 
 <!-- Footer
 ================================================== -->
-<div id="footer" class="margin-top-55">
+<div id="footer">
 	<!-- Main -->
 	<div class="container">
 		<div class="row">
@@ -463,12 +537,6 @@
 <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-
-<!-- Maps -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
-<script type="text/javascript" src="scripts/infobox.min.js"></script>
-<script type="text/javascript" src="scripts/markerclusterer.js"></script>
-<script type="text/javascript" src="scripts/maps.js"></script>
 
 
 <!-- Style Switcher

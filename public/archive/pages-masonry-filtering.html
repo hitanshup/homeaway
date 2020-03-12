@@ -272,112 +272,183 @@
 <!-- Header Container / End -->
 
 
-<!-- Content
+<!-- Titlebar
 ================================================== -->
+<div id="titlebar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
 
-<!-- Map Container -->
-<div class="contact-map margin-bottom-60">
+				<h2>Masonry Filtering</h2>
 
-	<!-- Google Maps -->
-	<div id="singleListingMap-container">
-		<div id="singleListingMap" data-latitude="40.70437865245596" data-longitude="-73.98674011230469" data-map-icon="im im-icon-Map2"></div>
-		<a href="#" id="streetView">Street View</a>
-	</div>
-	<!-- Google Maps / End -->
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Masonry Filtering</li>
+					</ul>
+				</nav>
 
-	<!-- Office -->
-	<div class="address-box-container">
-		<div class="address-container" data-background-image="images/our-office.jpg">
-			<div class="office-address">
-				<h3>Our Office</h3>
-				<ul>
-					<li>John Street 304</li>
-					<li>New York</li>
-					<li>Phone (123) 123-456 </li>
-				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- Office / End -->
-
 </div>
-<div class="clearfix"></div>
-<!-- Map Container / End -->
 
 
-<!-- Container / Start -->
+<!-- Content
+================================================== -->
 <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<!-- Filters -->
+				<div id="filters">
+					<ul class="option-set margin-bottom-30">
+						<li><a href="#filter" class="selected" data-filter="*">All</a></li>
+						<li><a href="#filter" data-filter=".first-filter">First Filter</a></li>
+						<li><a href="#filter" data-filter=".second-filter">Second Filter</a></li>
+						<li><a href="#filter" data-filter=".third-filter">Third Filter</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+
+			</div>
+		</div>
 
 	<div class="row">
 
-		<!-- Contact Details -->
-		<div class="col-md-4">
+		<!-- Projects -->
+		<div class="projects isotope-wrapper">
+			
 
-			<h4 class="headline margin-bottom-30">Find Us There</h4>
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-01.jpg" alt="">
 
-			<!-- Contact Details -->
-			<div class="sidebar-textbox">
-				<p>Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services.</p>
+							<div class="listing-badge now-open">Now Open</div>
 
-				<ul class="contact-details">
-					<li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Fax"></i> <strong>Fax:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.example.com</a></span></li>
-					<li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">office@example.com</a></span></li>
-				</ul>
-			</div>
-
-		</div>
-
-		<!-- Contact Form -->
-		<div class="col-md-8">
-
-			<section id="contact">
-				<h4 class="headline margin-bottom-35">Contact Form</h4>
-
-				<div id="contact-message"></div> 
-
-					<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
-
-					<div class="row">
-						<div class="col-md-6">
-							<div>
-								<input name="name" type="text" id="name" placeholder="Your Name" required="required" />
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="3.5"></div>
+								<h3>Tom's Restaurant</h3>
+								<span>964 School Street, New York</span>
 							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item second-filter first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-02.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Friday, August 10</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="5.0"></div>
+								<h3>Sticky Band</h3>
+								<span>Bishop Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->		
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item third-filter first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-03.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Starting from $59 per night</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="2.0"></div>
+								<h3>Hotel Govendor</h3>
+								<span>778 Country Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
 						</div>
 
-						<div class="col-md-6">
-							<div>
-								<input name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item third-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-04.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="5.0"></div>
+								<h3>Burger House</h3>
+								<span>2726 Shinn Street, New York</span>
 							</div>
+							<span class="like-icon"></span>
 						</div>
-					</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
 
-					<div>
-						<input name="subject" type="text" id="subject" placeholder="Subject" required="required" />
-					</div>
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item second-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-05.jpg" alt="">
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="3.5"></div>
+								<h3>Airport</h3>
+								<span>1512 Duncan Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
 
-					<div>
-						<textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
-					</div>
+				<!-- Listing Item -->
+				<div class="col-lg-4 col-md-6 isotope-item first-filter">
+					<a href="listings-single-page.html" class="listing-item-container compact">
+						<div class="listing-item">
+							<img src="images/listing-item-06.jpg" alt="">
 
-					<input type="submit" class="submit button" id="submit" value="Submit Message" />
+							<div class="listing-badge now-closed">Now Closed</div>
 
-					</form>
-			</section>
+							<div class="listing-item-content">
+								<div class="numerical-rating" data-rating="4.5"></div>
+								<h3>Think Coffee</h3>
+								<span>215 Terry Lane, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+
 		</div>
-		<!-- Contact Form / End -->
 
 	</div>
-
 </div>
-<!-- Container / End -->
+
 
 
 
 <!-- Footer
 ================================================== -->
-<div id="footer" class="margin-top-55">
+<div id="footer" class="margin-top-60">
 	<!-- Main -->
 	<div class="container">
 		<div class="row">
@@ -464,11 +535,24 @@
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 
-<!-- Maps -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
-<script type="text/javascript" src="scripts/infobox.min.js"></script>
-<script type="text/javascript" src="scripts/markerclusterer.js"></script>
-<script type="text/javascript" src="scripts/maps.js"></script>
+<!-- Masonry Filtering -->
+<script type="text/javascript" src="scripts/isotope.min.js"></script>
+<script>
+	$(window).load(function(){
+	  var $container = $('.isotope-wrapper');
+	  $container.isotope({ itemSelector: '.isotope-item', layoutMode: 'masonry' });
+	});
+
+	$('#filters a').click(function(e){
+	  e.preventDefault();
+
+	  var selector = $(this).attr('data-filter');
+	  $('.projects.isotope-wrapper').isotope({ filter: selector });
+
+	  $(this).parents('ul').find('a').removeClass('selected');
+	  $(this).addClass('selected');
+	});
+</script>
 
 
 <!-- Style Switcher

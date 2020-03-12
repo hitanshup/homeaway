@@ -48,7 +48,7 @@
 				<nav id="navigation" class="style-1">
 					<ul id="responsive">
 
-						<li><a href="#">Home</a>
+						<li><a class="current" href="#">Home</a>
 							<ul>
 								<li><a href="index.html">Home 1</a></li>
 								<li><a href="index-2-airbnb.html">Home 2 (Airbnb)</a></li>
@@ -118,7 +118,7 @@
 							</ul>
 						</li>
 
-						<li><a href="#" class="current">Pages</a>
+						<li><a href="#">Pages</a>
 							<div class="mega-menu mobile-styles three-columns">
 
 									<div class="mega-menu-section">
@@ -161,6 +161,7 @@
 				
 			</div>
 			<!-- Left Side Content / End -->
+
 
 			<!-- Right Side Content / End -->
 			<div class="right-side">
@@ -272,112 +273,347 @@
 <!-- Header Container / End -->
 
 
-<!-- Content
+<!-- Banner
 ================================================== -->
+<div class="main-search-container dark-overlay">
+	<div class="main-search-inner">
 
-<!-- Map Container -->
-<div class="contact-map margin-bottom-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Find Nearby Attractions</h2>
+					<h4>Expolore top-rated attractions, activities and more</h4>
 
-	<!-- Google Maps -->
-	<div id="singleListingMap-container">
-		<div id="singleListingMap" data-latitude="40.70437865245596" data-longitude="-73.98674011230469" data-map-icon="im im-icon-Map2"></div>
-		<a href="#" id="streetView">Street View</a>
-	</div>
-	<!-- Google Maps / End -->
+					<div class="main-search-input">
 
-	<!-- Office -->
-	<div class="address-box-container">
-		<div class="address-container" data-background-image="images/our-office.jpg">
-			<div class="office-address">
-				<h3>Our Office</h3>
-				<ul>
-					<li>John Street 304</li>
-					<li>New York</li>
-					<li>Phone (123) 123-456 </li>
-				</ul>
+						<div class="main-search-input-item">
+							<input type="text" placeholder="What are you looking for?" value=""/>
+						</div>
+
+						<div class="main-search-input-item location">
+							<div id="autocomplete-container">
+								<input id="autocomplete-input" type="text" placeholder="Location">
+							</div>
+							<a href="#"><i class="fa fa-map-marker"></i></a>
+						</div>
+
+						<div class="main-search-input-item">
+							<select data-placeholder="All Categories" class="chosen-select" >
+								<option>All Categories</option>	
+								<option>Shops</option>
+								<option>Hotels</option>
+								<option>Restaurants</option>
+								<option>Fitness</option>
+								<option>Events</option>
+							</select>
+						</div>
+
+						<button class="button" onclick="window.location.href='listings-half-screen-map-list.html'">Search</button>
+
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</div>
-	<!-- Office / End -->
+	
+	<!-- Video -->
+	<div class="video-container">
+		<video poster="images/main-search-video-poster.jpg" loop autoplay muted>
+			<source src="images/main-search-video.mp4" type="video/mp4">
+		</video>
+	</div>
 
 </div>
-<div class="clearfix"></div>
-<!-- Map Container / End -->
 
 
-<!-- Container / Start -->
+
+<!-- Content
+================================================== -->
 <div class="container">
-
 	<div class="row">
 
-		<!-- Contact Details -->
-		<div class="col-md-4">
-
-			<h4 class="headline margin-bottom-30">Find Us There</h4>
-
-			<!-- Contact Details -->
-			<div class="sidebar-textbox">
-				<p>Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services.</p>
-
-				<ul class="contact-details">
-					<li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Fax"></i> <strong>Fax:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.example.com</a></span></li>
-					<li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">office@example.com</a></span></li>
-				</ul>
-			</div>
-
+		<div class="col-md-12">
+			<h3 class="headline centered margin-top-75">
+				Browse Categories
+			</h3>
 		</div>
-
-		<!-- Contact Form -->
-		<div class="col-md-8">
-
-			<section id="contact">
-				<h4 class="headline margin-bottom-35">Contact Form</h4>
-
-				<div id="contact-message"></div> 
-
-					<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
-
-					<div class="row">
-						<div class="col-md-6">
-							<div>
-								<input name="name" type="text" id="name" placeholder="Your Name" required="required" />
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div>
-								<input name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
-							</div>
-						</div>
-					</div>
-
-					<div>
-						<input name="subject" type="text" id="subject" placeholder="Subject" required="required" />
-					</div>
-
-					<div>
-						<textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
-					</div>
-
-					<input type="submit" class="submit button" id="submit" value="Submit Message" />
-
-					</form>
-			</section>
-		</div>
-		<!-- Contact Form / End -->
 
 	</div>
+</div>
 
+
+<!-- Category Boxes -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="categories-boxes-container margin-top-5 margin-bottom-30">
+				
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Hamburger"></i>
+					<h4>Eat & Drink</h4>
+					<span class="category-box-counter">12</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im  im-icon-Sleeping"></i>
+					<h4>Hotels</h4>
+					<span class="category-box-counter">32</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Shopping-Bag"></i>
+					<h4>Shops</h4>
+					<span class="category-box-counter">11</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Cocktail"></i>
+					<h4>Nightlife</h4>
+					<span class="category-box-counter">15</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Electric-Guitar"></i>
+					<h4>Events</h4>
+					<span class="category-box-counter">21</span>
+				</a>
+
+				<!-- Box -->
+				<a href="listings-list-with-sidebar.html" class="category-small-box">
+					<i class="im im-icon-Dumbbell"></i>
+					<h4>Fitness</h4>
+					<span class="category-box-counter">28</span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Category Boxes / End -->
+
+
+<!-- Fullwidth Section -->
+<section class="fullwidth margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#f8f8f8">
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<h3 class="headline centered margin-bottom-45">
+					Most Visited Places
+					<span>Discover top-rated local businesses</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- Carousel / Start -->
+	<div class="simple-fw-slick-carousel dots-nav">
+
+		<!-- Listing Item -->
+		<div class="fw-carousel-item">
+			<a href="listings-single-page.html" class="listing-item-container compact">
+				<div class="listing-item">
+					<img src="images/listing-item-01.jpg" alt="">
+
+					<div class="listing-badge now-open">Now Open</div>
+
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="3.5"></div>
+						<h3>Tom's Restaurant</h3>
+						<span>964 School Street, New York</span>
+					</div>
+					<span class="like-icon"></span>
+				</div>
+			</a>
+		</div>
+		<!-- Listing Item / End -->
+
+		<!-- Listing Item -->
+		<div class="fw-carousel-item">
+			<a href="listings-single-page.html" class="listing-item-container compact">
+				<div class="listing-item">
+					<img src="images/listing-item-02.jpg" alt="">
+					<div class="listing-item-details">
+						<ul>
+							<li>Friday, August 10</li>
+						</ul>
+					</div>
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="5.0"></div>
+						<h3>Sticky Band</h3>
+						<span>Bishop Avenue, New York</span>
+					</div>
+					<span class="like-icon"></span>
+				</div>
+			</a>
+		</div>
+		<!-- Listing Item / End -->		
+
+		<!-- Listing Item -->
+		<div class="fw-carousel-item">
+			<a href="listings-single-page.html" class="listing-item-container compact">
+				<div class="listing-item">
+					<img src="images/listing-item-03.jpg" alt="">
+					<div class="listing-item-details">
+						<ul>
+							<li>Starting from $59 per night</li>
+						</ul>
+					</div>
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="2.0"></div>
+						<h3>Hotel Govendor</h3>
+						<span>778 Country Street, New York</span>
+					</div>
+					<span class="like-icon"></span>
+				</div>
+
+			</a>
+		</div>
+		<!-- Listing Item / End -->
+
+		<!-- Listing Item -->
+		<div class="fw-carousel-item">
+			<a href="listings-single-page.html" class="listing-item-container compact">
+				<div class="listing-item">
+					<img src="images/listing-item-04.jpg" alt="">
+
+					<div class="listing-badge now-open">Now Open</div>
+
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="5.0"></div>
+						<h3>Burger House</h3>
+						<span>2726 Shinn Street, New York</span>
+					</div>
+					<span class="like-icon"></span>
+				</div>
+			</a>
+		</div>
+		<!-- Listing Item / End -->
+
+		<!-- Listing Item -->
+		<div class="fw-carousel-item">
+			<a href="listings-single-page.html" class="listing-item-container compact">
+				<div class="listing-item">
+					<img src="images/listing-item-05.jpg" alt="">
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="3.5"></div>
+						<h3>Airport</h3>
+						<span>1512 Duncan Avenue, New York</span>
+					</div>
+					<span class="like-icon"></span>
+				</div>
+			</a>
+		</div>
+		<!-- Listing Item / End -->
+
+		<!-- Listing Item -->
+		<div class="fw-carousel-item">
+			<a href="listings-single-page.html" class="listing-item-container compact">
+				<div class="listing-item">
+					<img src="images/listing-item-06.jpg" alt="">
+
+					<div class="listing-badge now-closed">Now Closed</div>
+
+					<div class="listing-item-content">
+						<div class="numerical-rating" data-rating="4.5"></div>
+						<h3>Think Coffee</h3>
+						<span>215 Terry Lane, New York</span>
+					</div>
+					<span class="like-icon"></span>
+				</div>
+			</a>
+		</div>
+		<!-- Listing Item / End -->
+
+	</div>
+	<!-- Carousel / End -->
+
+
+</section>
+<!-- Fullwidth Section / End -->
+
+
+<!-- Container -->
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-12">
+			<h3 class="headline centered margin-bottom-35 margin-top-70">Popular Cities <span>Browse listings in popular places</span></h3>
+		</div>
+		
+		<div class="col-md-4">
+
+			<!-- Image Box -->
+			<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-01.jpg">
+				<div class="img-box-content visible">
+					<h4>New York </h4>
+					<span>14 Listings</span>
+				</div>
+			</a>
+
+		</div>	
+			
+		<div class="col-md-8">
+
+			<!-- Image Box -->
+			<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-02.jpg">
+				<div class="img-box-content visible">
+					<h4>Los Angeles</h4>
+					<span>24 Listings</span>
+				</div>
+			</a>
+
+		</div>	
+
+		<div class="col-md-8">
+
+			<!-- Image Box -->
+			<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-03.jpg">
+				<div class="img-box-content visible">
+					<h4>San Francisco </h4>
+					<span>12 Listings</span>
+				</div>
+			</a>
+
+		</div>	
+			
+		<div class="col-md-4">
+
+			<!-- Image Box -->
+			<a href="listings-list-with-sidebar.html" class="img-box" data-background-image="images/popular-location-04.jpg">
+				<div class="img-box-content visible">
+					<h4>Miami</h4>
+					<span>9 Listings</span>
+				</div>
+			</a>
+
+		</div>
+
+	</div>
 </div>
 <!-- Container / End -->
 
 
+<!-- Flip banner -->
+<a href="listings-half-screen-map-list.html" class="flip-banner parallax margin-top-65" data-background="images/slider-bg-02.jpg" data-color="#f91942" data-color-opacity="0.85" data-img-width="2500" data-img-height="1666">
+	<div class="flip-banner-content">
+		<h2 class="flip-visible">Expolore top-rated attractions nearby</h2>
+		<h2 class="flip-hidden">Browse Listings <i class="sl sl-icon-arrow-right"></i></h2>
+	</div>
+</a>
+<!-- Flip banner / End -->
+
 
 <!-- Footer
 ================================================== -->
-<div id="footer" class="margin-top-55">
+<div id="footer">
 	<!-- Main -->
 	<div class="container">
 		<div class="row">
@@ -464,12 +700,27 @@
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 
-<!-- Maps -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
-<script type="text/javascript" src="scripts/infobox.min.js"></script>
-<script type="text/javascript" src="scripts/markerclusterer.js"></script>
-<script type="text/javascript" src="scripts/maps.js"></script>
+<!-- Google Autocomplete -->
+<script>
+  function initAutocomplete() {
+    var input = document.getElementById('autocomplete-input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
 
+    autocomplete.addListener('place_changed', function() {
+      var place = autocomplete.getPlace();
+      if (!place.geometry) {
+        return;
+      }
+    });
+
+	if ($('.main-search-input-item')[0]) {
+	    setTimeout(function(){ 
+	        $(".pac-container").prependTo("#autocomplete-container");
+	    }, 300);
+	}
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initAutocomplete"></script>
 
 <!-- Style Switcher
 ================================================== -->

@@ -21,15 +21,15 @@
 
 <!-- Header Container
 ================================================== -->
-<header id="header-container">
+<header id="header-container" class="fixed fullwidth">
 
 	<!-- Header -->
-	<div id="header">
+	<div id="header" class="not-sticky">
 		<div class="container">
-			
+
 			<!-- Left Side Content -->
 			<div class="left-side">
-				
+
 				<!-- Logo -->
 				<div id="logo">
 					<a href="index.html"><img src="images/logo.png" alt=""></a>
@@ -59,7 +59,7 @@
 							</ul>
 						</li>
 
-						<li><a href="#">Listings</a>
+						<li><a class="current" href="#">Listings</a>
 							<ul>
 								<li><a href="#">List Layout</a>
 									<ul>
@@ -118,7 +118,7 @@
 							</ul>
 						</li>
 
-						<li><a href="#" class="current">Pages</a>
+						<li><a href="#">Pages</a>
 							<div class="mega-menu mobile-styles three-columns">
 
 									<div class="mega-menu-section">
@@ -130,7 +130,7 @@
 											<li><a href="pages-blog.html"><i class="sl sl-icon-docs"></i> Blog</a></li>
 										</ul>
 									</div>
-		
+
 									<div class="mega-menu-section">
 										<ul>
 											<li class="mega-menu-headline">Pages #2</li>
@@ -150,15 +150,15 @@
 											<li><a href="pages-icons.html"><i class="sl sl-icon-diamond"></i> Icons</a></li>
 										</ul>
 									</div>
-									
+
 							</div>
 						</li>
-						
+
 					</ul>
 				</nav>
 				<div class="clearfix"></div>
 				<!-- Main Navigation / End -->
-				
+
 			</div>
 			<!-- Left Side Content / End -->
 
@@ -216,7 +216,7 @@
 										<label for="remember-me">Remember Me</label>
 									</div>
 								</div>
-								
+
 							</form>
 						</div>
 
@@ -224,14 +224,14 @@
 						<div class="tab-content" id="tab2" style="display: none;">
 
 							<form method="post" class="register">
-								
+
 							<p class="form-row form-row-wide">
 								<label for="username2">Username:
 									<i class="im im-icon-Male"></i>
 									<input type="text" class="input-text" name="username" id="username2" value="" />
 								</label>
 							</p>
-								
+
 							<p class="form-row form-row-wide">
 								<label for="email2">Email Address:
 									<i class="im im-icon-Mail"></i>
@@ -254,7 +254,7 @@
 							</p>
 
 							<input type="submit" class="button border fw margin-top-10" name="register" value="Register" />
-	
+
 							</form>
 						</div>
 
@@ -274,179 +274,357 @@
 
 <!-- Content
 ================================================== -->
+<div class="fs-container">
 
-<!-- Map Container -->
-<div class="contact-map margin-bottom-60">
+	<div class="fs-inner-container content">
+		<div class="fs-content">
 
-	<!-- Google Maps -->
-	<div id="singleListingMap-container">
-		<div id="singleListingMap" data-latitude="40.70437865245596" data-longitude="-73.98674011230469" data-map-icon="im im-icon-Map2"></div>
-		<a href="#" id="streetView">Street View</a>
-	</div>
-	<!-- Google Maps / End -->
+			<!-- Search -->
+			<section class="search">
 
-	<!-- Office -->
-	<div class="address-box-container">
-		<div class="address-container" data-background-image="images/our-office.jpg">
-			<div class="office-address">
-				<h3>Our Office</h3>
-				<ul>
-					<li>John Street 304</li>
-					<li>New York</li>
-					<li>Phone (123) 123-456 </li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- Office / End -->
+				<div class="row">
+					<div class="col-md-12">
 
-</div>
-<div class="clearfix"></div>
-<!-- Map Container / End -->
+							<!-- Row With Forms -->
+							<div class="row with-forms">
+
+								<!-- Main Search Input -->
+								<div class="col-fs-6">
+									<div class="input-with-icon">
+										<i class="sl sl-icon-magnifier"></i>
+										<input type="text" placeholder="What are you looking for?" value=""/>
+									</div>
+								</div>
+
+								<!-- Main Search Input -->
+								<div class="col-fs-6">
+									<div class="input-with-icon location">
+
+										<div id="autocomplete-container" data-autocomplete-tip="type and hit enter">
+											<input id="autocomplete-input" type="text" placeholder="Location">
+										</div>
+										<a href="#"><i class="fa fa-map-marker"></i></a>
+									</div>
+								</div>
 
 
-<!-- Container / Start -->
-<div class="container">
+								<!-- Filters -->
+								<div class="col-fs-12">
 
-	<div class="row">
+									<!-- Panel Dropdown / End -->
+									<div class="panel-dropdown">
+										<a href="#">Categories</a>
+										<div class="panel-dropdown-content checkboxes categories">
 
-		<!-- Contact Details -->
-		<div class="col-md-4">
+											<!-- Checkboxes -->
+											<div class="row">
+												<div class="col-md-6">
+													<input id="check-1" type="checkbox" name="check" checked class="all">
+													<label for="check-1">All Categories</label>
 
-			<h4 class="headline margin-bottom-30">Find Us There</h4>
+													<input id="check-2" type="checkbox" name="check">
+													<label for="check-2">Shops</label>
 
-			<!-- Contact Details -->
-			<div class="sidebar-textbox">
-				<p>Collaboratively administrate channels whereas virtual. Objectively seize scalable metrics whereas proactive e-services.</p>
+													<input id="check-3" type="checkbox" name="check">
+													<label for="check-3">Hotels</label>
+												</div>
 
-				<ul class="contact-details">
-					<li><i class="im im-icon-Phone-2"></i> <strong>Phone:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Fax"></i> <strong>Fax:</strong> <span>(123) 123-456 </span></li>
-					<li><i class="im im-icon-Globe"></i> <strong>Web:</strong> <span><a href="#">www.example.com</a></span></li>
-					<li><i class="im im-icon-Envelope"></i> <strong>E-Mail:</strong> <span><a href="#">office@example.com</a></span></li>
-				</ul>
-			</div>
+												<div class="col-md-6">
+													<input id="check-4" type="checkbox" name="check" >
+													<label for="check-4">Eat & Drink</label>
 
-		</div>
+													<input id="check-5" type="checkbox" name="check">
+													<label for="check-5">Fitness</label>
 
-		<!-- Contact Form -->
-		<div class="col-md-8">
+													<input id="check-6" type="checkbox" name="check">
+													<label for="check-6">Events</label>
+												</div>
+											</div>
 
-			<section id="contact">
-				<h4 class="headline margin-bottom-35">Contact Form</h4>
+											<!-- Buttons -->
+											<div class="panel-buttons">
+												<button class="panel-cancel">Cancel</button>
+												<button class="panel-apply">Apply</button>
+											</div>
 
-				<div id="contact-message"></div> 
+										</div>
+									</div>
+									<!-- Panel Dropdown / End -->
 
-					<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+									<!-- Panel Dropdown -->
+									<div class="panel-dropdown wide">
+										<a href="#">More Filters</a>
+										<div class="panel-dropdown-content checkboxes">
 
-					<div class="row">
-						<div class="col-md-6">
-							<div>
-								<input name="name" type="text" id="name" placeholder="Your Name" required="required" />
+											<!-- Checkboxes -->
+											<div class="row">
+												<div class="col-md-6">
+													<input id="check-a" type="checkbox" name="check">
+													<label for="check-a">Elevator in building</label>
+
+													<input id="check-b" type="checkbox" name="check">
+													<label for="check-b">Friendly workspace</label>
+
+													<input id="check-c" type="checkbox" name="check">
+													<label for="check-c">Instant Book</label>
+
+													<input id="check-d" type="checkbox" name="check">
+													<label for="check-d">Wireless Internet</label>
+												</div>
+
+												<div class="col-md-6">
+													<input id="check-e" type="checkbox" name="check" >
+													<label for="check-e">Free parking on premises</label>
+
+													<input id="check-f" type="checkbox" name="check" >
+													<label for="check-f">Free parking on street</label>
+
+													<input id="check-g" type="checkbox" name="check">
+													<label for="check-g">Smoking allowed</label>
+
+													<input id="check-h" type="checkbox" name="check">
+													<label for="check-h">Events</label>
+												</div>
+											</div>
+
+											<!-- Buttons -->
+											<div class="panel-buttons">
+												<button class="panel-cancel">Cancel</button>
+												<button class="panel-apply">Apply</button>
+											</div>
+
+										</div>
+									</div>
+									<!-- Panel Dropdown / End -->
+
+									<!-- Panel Dropdown -->
+									<div class="panel-dropdown">
+										<a href="#">Distance Radius</a>
+										<div class="panel-dropdown-content">
+											<input class="distance-radius" type="range" min="1" max="100" step="1" value="50" data-title="Radius around selected destination">
+											<div class="panel-buttons">
+												<button class="panel-cancel">Disable</button>
+												<button class="panel-apply">Apply</button>
+											</div>
+										</div>
+									</div>
+									<!-- Panel Dropdown / End -->
+
+								</div>
+								<!-- Filters / End -->
+
 							</div>
-						</div>
+							<!-- Row With Forms / End -->
 
-						<div class="col-md-6">
-							<div>
-								<input name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
-							</div>
-						</div>
 					</div>
-
-					<div>
-						<input name="subject" type="text" id="subject" placeholder="Subject" required="required" />
-					</div>
-
-					<div>
-						<textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
-					</div>
-
-					<input type="submit" class="submit button" id="submit" value="Submit Message" />
-
-					</form>
-			</section>
-		</div>
-		<!-- Contact Form / End -->
-
-	</div>
-
-</div>
-<!-- Container / End -->
-
-
-
-<!-- Footer
-================================================== -->
-<div id="footer" class="margin-top-55">
-	<!-- Main -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-				<img class="footer-logo" src="images/logo.png" alt="">
-				<br><br>
-				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
-			</div>
-
-			<div class="col-md-4 col-sm-6 ">
-				<h4>Helpful Links</h4>
-				<ul class="footer-links">
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Sign Up</a></li>
-					<li><a href="#">My Account</a></li>
-					<li><a href="#">Add Listing</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-				</ul>
-
-				<ul class="footer-links">
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Our Partners</a></li>
-					<li><a href="#">How It Works</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<div class="clearfix"></div>
-			</div>		
-
-			<div class="col-md-3  col-sm-12">
-				<h4>Contact Us</h4>
-				<div class="text-widget">
-					<span>12345 Little Lonsdale St, Melbourne</span> <br>
-					Phone: <span>(123) 123-456 </span><br>
-					E-Mail:<span> <a href="#">office@example.com</a> </span><br>
 				</div>
 
-				<ul class="social-icons margin-top-20">
-					<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
-					<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
-					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
-					<li><a class="vimeo" href="#"><i class="icon-vimeo"></i></a></li>
-				</ul>
+			</section>
+			<!-- Search / End -->
+
+
+		<section class="listings-container margin-top-30">
+			<!-- Sorting / Layout Switcher -->
+			<div class="row fs-switcher">
+
+				<div class="col-md-6">
+					<!-- Showing Results -->
+					<p class="showing-results">14 Results Found </p>
+				</div>
 
 			</div>
+
+
+			<!-- Listings -->
+			<div class="row fs-listings">
+
+				<!-- Listing Item -->
+				<div class="col-lg-6 col-md-12">
+					<a href="listings-single-page.html" class="listing-item-container" data-marker-id="1">
+						<div class="listing-item">
+							<img src="images/listing-item-01.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<span class="tag">Eat & Drink</span>
+								<h3>Tom's Restaurant <i class="verified-icon"></i></h3>
+								<span>964 School Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="3.5">
+							<div class="rating-counter">(12 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-6 col-md-12">
+					<a href="listings-single-page.html" class="listing-item-container" data-marker-id="2">
+						<div class="listing-item">
+							<img src="images/listing-item-02.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Friday, August 10</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<span class="tag">Events</span>
+								<h3>Sticky Band</h3>
+								<span>Bishop Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="5.0">
+							<div class="rating-counter">(23 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-6 col-md-12">
+					<a href="listings-single-page.html" class="listing-item-container" data-marker-id="3">
+						<div class="listing-item">
+							<img src="images/listing-item-03.jpg" alt="">
+							<div class="listing-item-details">
+								<ul>
+									<li>Starting from $59 per night</li>
+								</ul>
+							</div>
+							<div class="listing-item-content">
+								<span class="tag">Hotels</span>
+								<h3>Hotel Govendor</h3>
+								<span>778 Country Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="2.0">
+							<div class="rating-counter">(17 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-6 col-md-12">
+					<a href="listings-single-page.html" class="listing-item-container" data-marker-id="4">
+						<div class="listing-item">
+							<img src="images/listing-item-04.jpg" alt="">
+
+							<div class="listing-badge now-open">Now Open</div>
+
+							<div class="listing-item-content">
+								<span class="tag">Eat & Drink</span>
+								<h3>Burger House <i class="verified-icon"></i></h3>
+								<span>2726 Shinn Street, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="5.0">
+							<div class="rating-counter">(31 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-6 col-md-12">
+					<a href="listings-single-page.html" class="listing-item-container" data-marker-id="5">
+						<div class="listing-item">
+							<img src="images/listing-item-05.jpg" alt="">
+							<div class="listing-item-content">
+								<span class="tag">Other</span>
+								<h3>Airport</h3>
+								<span>1512 Duncan Avenue, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="3.5">
+							<div class="rating-counter">(46 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+				<!-- Listing Item -->
+				<div class="col-lg-6 col-md-12">
+					<a href="listings-single-page.html" class="listing-item-container" data-marker-id="6">
+						<div class="listing-item">
+							<img src="images/listing-item-06.jpg" alt="">
+
+							<div class="listing-badge now-closed">Now Closed</div>
+
+							<div class="listing-item-content">
+								<span class="tag">Eat & Drink</span>
+								<h3>Think Coffee</h3>
+								<span>215 Terry Lane, New York</span>
+							</div>
+							<span class="like-icon"></span>
+						</div>
+						<div class="star-rating" data-rating="4.5">
+							<div class="rating-counter">(15 reviews)</div>
+						</div>
+					</a>
+				</div>
+				<!-- Listing Item / End -->
+
+
+			</div>
+			<!-- Listings Container / End -->
+
+
+			<!-- Pagination Container -->
+			<div class="row fs-listings">
+				<div class="col-md-12">
+
+					<!-- Pagination -->
+					<div class="clearfix"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Pagination -->
+							<div class="pagination-container margin-top-15 margin-bottom-40">
+								<nav class="pagination">
+									<ul>
+										<li><a href="#" class="current-page">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<!-- Pagination / End -->
+
+					<!-- Copyrights -->
+					<div class="copyrights margin-top-0">© 2019 Listeo. All Rights Reserved.</div>
+
+				</div>
+			</div>
+			<!-- Pagination Container / End -->
+		</section>
 
 		</div>
-		
-		<!-- Copyright -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="copyrights">© 2019 Listeo. All Rights Reserved.</div>
-			</div>
+	</div>
+	<div class="fs-inner-container map-fixed">
+
+		<!-- Map -->
+		<div id="map-container">
+		    <div id="map" data-map-scroll="true">
+		        <!-- map goes here -->
+		    </div>
 		</div>
 
 	</div>
-
 </div>
-<!-- Footer / End -->
-
-
-<!-- Back To Top Button -->
-<div id="backtotop"><a href="#"></a></div>
 
 
 </div>
 <!-- Wrapper / End -->
-
 
 
 <!-- Scripts
@@ -464,6 +642,7 @@
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 
+
 <!-- Leaflet // Docs: https://leafletjs.com/ -->
 <script src="scripts/leaflet.min.js"></script>
 
@@ -472,37 +651,9 @@
 <script src="scripts/leaflet-gesture-handling.min.js"></script>
 <script src="scripts/leaflet-listeo.js"></script>
 
-
-<!-- Style Switcher
-================================================== -->
-<script src="scripts/switcher.js"></script>
-
-<div id="style-switcher">
-	<h2>Color Switcher <a href="#"><i class="sl sl-icon-settings"></i></a></h2>
-	
-	<div>
-		<ul class="colors" id="color1">
-			<li><a href="#" class="main" title="Main"></a></li>
-			<li><a href="#" class="blue" title="Blue"></a></li>
-			<li><a href="#" class="green" title="Green"></a></li>
-			<li><a href="#" class="orange" title="Orange"></a></li>
-			<li><a href="#" class="navy" title="Navy"></a></li>
-			<li><a href="#" class="yellow" title="Yellow"></a></li>
-			<li><a href="#" class="peach" title="Peach"></a></li>
-			<li><a href="#" class="beige" title="Beige"></a></li>
-			<li><a href="#" class="purple" title="Purple"></a></li>
-			<li><a href="#" class="celadon" title="Celadon"></a></li>
-			<li><a href="#" class="red" title="Red"></a></li>
-			<li><a href="#" class="brown" title="Brown"></a></li>
-			<li><a href="#" class="cherry" title="Cherry"></a></li>
-			<li><a href="#" class="cyan" title="Cyan"></a></li>
-			<li><a href="#" class="gray" title="Gray"></a></li>
-			<li><a href="#" class="olive" title="Olive"></a></li>
-		</ul>
-	</div>
-		
-</div>
-<!-- Style Switcher / End -->
+<!-- Leaflet Geocoder + Search Autocomplete // Docs: https://github.com/perliedman/leaflet-control-geocoder -->
+<script src="scripts/leaflet-autocomplete.js"></script>
+<script src="scripts/leaflet-control-geocoder.js"></script>
 
 
 </body>

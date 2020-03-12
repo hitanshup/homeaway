@@ -994,7 +994,7 @@ $(document).ready(function(){
 
 					// Refresh sotrable script
 					$(".slots-container").sortable('refresh');
-			} 
+			}
 
 			// Validation Error
 			else {
@@ -1012,14 +1012,14 @@ $(document).ready(function(){
 				daySlots.find(".no-slots")
 						.addClass("no-slots-fadein")
 						.removeClass("no-slots-fadeout");
-			} 
+			}
 		}
 		hideSlotInfo();
 
 
 		// Removing Slot
 	    daySlots.find('.remove-slot').bind('click', function() {
-			$(this).closest('.single-slot').animate({height: 0, opacity: 0}, 'fast', function() { 
+			$(this).closest('.single-slot').animate({height: 0, opacity: 0}, 'fast', function() {
 				$(this).remove();
 			});
 
@@ -1037,7 +1037,7 @@ $(document).ready(function(){
 				daySlots.find(".no-slots")
 						.removeClass("no-slots-fadein")
 						.addClass("no-slots-fadeout");
-			} 
+			}
 		});
 
     });
@@ -1059,7 +1059,7 @@ $(document).ready(function(){
 	      var picker = $(this),
 	          p = picker.find('button:last-child'),
 	          m = picker.find('button:first-child'),
-	          input = picker.find('input'),                 
+	          input = picker.find('input'),
 	          min = parseInt(input.attr('min'), 10),
 	          max = parseInt(input.attr('max'), 10),
 	          inputFunc = function(picker) {
@@ -1070,7 +1070,7 @@ $(document).ready(function(){
 	              m.prop(dis, true);
 	            } else if (i >= max) {
 	              input.val(max);
-	              p.prop(dis, true); 
+	              p.prop(dis, true);
 	              m.prop(dis, false);
 	            } else {
 	              p.prop(dis, false);
@@ -1234,6 +1234,19 @@ $(document).ready(function(){
 	    }
 	});
 
+	$('input[type="range"].distance-price').rangeslider({
+	    polyfill : false,
+	    onInit : function() {
+	        this.output = $( '<div class="range-output" />' ).insertBefore( this.$range ).html( this.$element.val() );
+
+		    var radiustext = $('.distance-price').attr('data-title');
+		    $('.range-output').after('<i class="data-price-title">'+ radiustext + '</i>');
+
+	    },
+	    onSlide : function( position, value ) {
+	        this.output.html( value );
+	    }
+	});
 
     /*----------------------------------------------------*/
     /*  Show More Button
