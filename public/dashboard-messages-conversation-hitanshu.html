@@ -32,7 +32,7 @@
 
 				<!-- Logo -->
 				<div id="logo">
-					<a href="index.html"><img src="images/logo.png" alt=""></a>
+					<a href="index.html"><img src="graphics/long-logo2.png" alt=""></a>
 					<a href="index.html" class="dashboard-logo"><img src="graphics/long-logo2.png" alt=""></a>
 				</div>
 
@@ -74,7 +74,7 @@
 
 					<!-- User Menu -->
 					<div class="user-menu">
-						<div class="user-name"><span><img src="graphics/profilepic.png" alt=""></span>My Account</div>
+						<div class="user-name"><span><img src="graphics/profilepic.png" alt=""></span>Hi, Joanna!</div>
 						<ul>
 							<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
 							<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
@@ -112,7 +112,7 @@
 
 			<ul data-submenu-title="Main">
 				<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
-				<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages <span class="nav-tag messages">2</span></a></li>
+				<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages <span class="nav-tag messages">1</span></a></li>
 				<!--<li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i> Your Bookings</a></li>-->
 				<li><a href="dashboard-bookmarks.html"><i class="sl sl-icon-heart"></i> Your Bookmarks</a></li>
 			</ul>
@@ -131,6 +131,7 @@
 		</div>
 	</div>
 	<!-- Navigation / End -->
+
 
 	<!-- Content
 	================================================== -->
@@ -160,56 +161,68 @@
 
 				<div class="messages-container margin-top-0">
 					<div class="messages-headline">
-						<h4>Inbox</h4>
+						<h4>Your Messages</h4>
+						<a href="#" class="message-action"><i class="sl sl-icon-trash"></i> Delete Conversation</a>
 					</div>
 
-					<div class="messages-inbox">
+					<div class="messages-container-inner">
 
-						<ul>
-							<li class="unread">
-								<a href="dashboard-messages-conversation.html">
-									<div class="message-avatar"><img src="graphics/profilepic3.png" alt="" /></div>
+						<!-- Messages -->
+						<div class="messages-inbox">
+							<ul>
+								<li>
+									<a href="dashboard-messages-conversation.html">
+										<div class="message-avatar"><img src="graphics/profilepic3.png" alt="" /></div>
 
-									<div class="message-by">
-										<div class="message-by-headline">
-											<h5>Daniel Xiong <i>Unread</i></h5>
-											<span>2 hours ago</span>
+										<div class="message-by">
+											<div class="message-by-headline">
+												<h5>Daniel Xiong</h5>
+												<span>2 hours ago</span>
+											</div>
+											<p>How long does it take to walk to MC and DC?</p>
 										</div>
-										<p>How long does it take to walk to MC and DC?</p>
-									</div>
-								</a>
-							</li>
+									</a>
+								</li>
 
-							<li class="read">
-								<a href="dashboard-messages-conversation.html">
-									<div class="message-avatar"><img src="graphics/profilepic2.png" alt="" /></div>
+								<li class="active-message">
+									<a href="dashboard-messages-conversation.html">
+										<div class="message-avatar"><img src="graphics/profilepic2.png" alt="" /></div>
 
-									<div class="message-by">
-										<div class="message-by-headline">
-											<h5>Hitanshu Paruthi <i>Unread</i></h5>
-											<span>4 hours ago</span>
+										<div class="message-by">
+											<div class="message-by-headline">
+												<h5>Hitanshu Paruti <!--<i>Unread</i></h5>-->
+												<span>4 hours ago</span>
+											</div>
+											<p>Looking forward to checking out the apartment this Tuesday</p>
 										</div>
-										<p>Looking forward to checking out the apartment this Tuesday.</p>
-									</div>
-								</a>
-							</li>
-						</ul>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+						<!-- Messages / End -->
+
+						<!-- Message Content -->
+						<div class="message-content">
+
+							<div class="message-bubble">
+								<div class="message-avatar"><img src="graphics/profilepic2.png" alt="" /></div>
+								<div class="message-text"><p>Looking forward to checking out the apartment this Tuesday</p></div>
+							</div>
+
+							<!-- Reply Area -->
+							<div class="clearfix"></div>
+							<div class="message-reply">
+								<textarea cols="40" rows="3" placeholder="Your Message"></textarea>
+								<button class="button">Send Message</button>
+							</div>
+
+						</div>
+						<!-- Message Content -->
 
 					</div>
-				</div>
 
-				<!-- Pagination -
-				<div class="clearfix"></div>
-				<div class="pagination-container margin-top-30 margin-bottom-0">
-					<nav class="pagination">
-						<ul>
-							<li><a href="#" class="current-page">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
-						</ul>
-					</nav>
 				</div>
-				 Pagination / End -->
 
 			</div>
 
@@ -218,7 +231,6 @@
 				<div class="copyrights">© 2020 Homeaway.</div>
 			</div>
 		</div>
-
 	</div>
 	<!-- Content / End -->
 
