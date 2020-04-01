@@ -76,18 +76,7 @@
 			<!-- Right Side Content / End -->
 			<div class="right-side">
 				<div class="header-widget">
-					<!-- User Menu -->
-					<div class="user-menu">
-						<div class="user-name"><span><img src="graphics/profilepic.png" alt=""></span>Hi, Joanna!</div>
-						<ul>
-							<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
-							<li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
-							<li><a href="dashboard-bookings.html"><i class="fa fa-calendar-check-o"></i> Bookings</a></li>
-							<li><a href="index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
-						</ul>
-					</div>
-
-
+					<a href="#sign-in-dialog" class="sign-in popup-with-zoom-anim"><i class="sl sl-icon-login"></i> Sign In</a>
 					<a href="dashboard-add-listing.html" class="button border with-icon">Add Listing <i class="sl sl-icon-plus"></i></a>
 				</div>
 			</div>
@@ -112,10 +101,10 @@
 
 						<!-- Login -->
 						<div class="tab-content" id="tab1" style="display: none;">
-							<form method="post" class="login">
+							<form class="login">
 
 								<p class="form-row form-row-wide">
-									<label for="username">Name:
+									<label for="username">E-mail:
 										<i class="im im-icon-Male"></i>
 										<input type="text" class="input-text" name="username" id="username" value="" />
 									</label>
@@ -132,7 +121,7 @@
 								</p>
 
 								<div class="form-row">
-									<input type="submit" class="button border margin-top-5" name="login" value="Login" />
+									<button class="button" onclick="window.location.href='index.html'">Login</button>
 									<div class="checkboxes margin-top-10">
 										<input id="remember-me" type="checkbox" name="check">
 										<label for="remember-me">Remember Me</label>
@@ -145,17 +134,18 @@
 						<!-- Register -->
 						<div class="tab-content" id="tab2" style="display: none;">
 
-							<form method="post" class="register">
+							<form class="register">
 
 							<p class="form-row form-row-wide">
-								<label for="username2">Username:
+								<label for="username2">Name:
 									<i class="im im-icon-Male"></i>
 									<input type="text" class="input-text" name="username" id="username2" value="" />
 								</label>
 							</p>
 
 							<p class="form-row form-row-wide">
-								<label for="email2">Email Address:
+								<label for="email2">Email Address:<br>
+									✓ Use your school e-mail address for automatic verification.
 									<i class="im im-icon-Mail"></i>
 									<input type="text" class="input-text" name="email" id="email2" value="" />
 								</label>
@@ -233,15 +223,15 @@
 						</div>
 
 						<div class="main-search-input-item">
-							<select data-placeholder="Number of Rooms" class="chosen-select" id="room-select" multiple>
+							<select data-placeholder="Number of Rooms" class="chosen-select" multiple>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
-								<option>4</option>
+								<option>4+</option>
 							</select>
 						</div>
 
-						<button id="custom-main-search" class="button">Search</button>
+						<button class="button" onclick="window.location.href='listings.html'">Search</button>
 
 					</div>
 				</div>
