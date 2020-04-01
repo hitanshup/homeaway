@@ -1231,6 +1231,17 @@ $(document).ready(function(){
 	    },
 	    onSlide : function( position, value ) {
 	        this.output.html( value );
+	        if (value < 10) {
+	        	$('.far-listing').fadeOut();
+	        	$('.very-far-listing').fadeOut();
+	        } else if (value < 15) {
+	        	$('.far-listing').show();
+	        	$('.very-far-listing').fadeOut();
+	        } else {
+	        	$('.far-listing').show();
+	        	$('.very-far-listing').show();
+	        }
+	        $("#listing-count").text($('.listing-all-items').children(":visible").length);
 	    }
 	});
 
@@ -1245,6 +1256,16 @@ $(document).ready(function(){
 	    },
 	    onSlide : function( position, value ) {
 	        this.output.html( value );
+	        $('.listing-price').each(function(i) {
+	        	console.log($(this).text());
+	        	if(parseInt($(this).text()) > value) {
+	        		// console.log("test");
+	        		$(this).parents('.listing-item-price').fadeOut();
+	        	} else {
+	        		$(this).parents('.listing-item-price').show();
+	        	}
+	        });
+	        $("#listing-count").text($('.listing-all-items').children(":visible").length);
 	    }
 	});
 
@@ -1266,6 +1287,27 @@ $(document).ready(function(){
 
 		} else { $('.show-more').animate({height: '450px'}, 400); }
 
+	});
+
+	$('#custom-main-search').click(function() {
+		var rooms = $("#select-room option:selected" ).text();
+		console.log(rooms);
+		switch(rooms) {
+			case "1":
+				window.location = 'listings.html';
+				break;
+			case "2":
+				window.location = 'listings-2-room.html';
+				break;
+			case "3":
+				window.location = 'listings-3-room.html';
+				break;
+			case "4":
+				window.location = 'listings-4-room.html';
+				break;
+			default:
+				window.location = 'listings-2-room.html';
+		}
 	});
 
 

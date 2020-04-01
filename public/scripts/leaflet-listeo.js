@@ -60,13 +60,12 @@ if(document.getElementById("map") !== null){
 	// Locations
 	// ----------------------------------------------- //
 	var locations = [
-		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"Tom's Restaurant",'964 School Street, New York', '3.5', '12'), 40.94401669296697, -74.16938781738281, 1, '<i class="im im-icon-Chef-Hat"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-02.jpg','Sticky Band','Bishop Avenue, New York', '5.0', '23'), 40.77055783505125, -74.26002502441406,          2, '<i class="im im-icon-Electric-Guitar"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-03.jpg','Hotel Govendor','778 Country Street, New York', '2.0', '17'), 40.7427837, -73.11445617675781,         3, '<i class="im im-icon-Home-2"></i>' ],
-		[ locationData('listings-single-page.html','images/listing-item-04.jpg','Burger House','2726 Shinn Street, New York', '5.0', '31'), 40.70437865245596, -73.98674011230469,     4, '<i class="im im-icon-Hamburger"></i>' ],
-		[ locationData('listings-single-page.html','images/listing-item-05.jpg','Airport','1512 Duncan Avenue, New York', '3.5', '46'), 40.641311, -73.778139,                         5, '<i class="im im-icon-Plane"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-06.jpg','Think Coffee','215 Terry Lane, New York', '4.5', '15'), 41.080938, -73.535957,                        6, '<i class="im im-icon-Coffee"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-04.jpg','Burger House','2726 Shinn Street, New York', '5.0', '31'), 41.079386, -73.519478,                     7, '<i class="im im-icon-Hamburger"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'255 Sunview St, Waterloo', '3.5', '12'), 43.4742135,-80.5359378, 1, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'280 Lester St, Waterloo', '4', '12'), 43.4756084,-80.5379165, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'318 Spruce St, Waterloo', '4', '12'), 43.4791059,-80.5286479, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'519 King St, Waterloo', '4', '12'), 43.4957032,-80.5314105, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'180 Regina St, Waterloo', '4', '12'), 43.4737392,-80.5246537, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'719 Albert St, Waterloo', '4', '12'), 43.4912018,-80.5412174, 2, '<i class="im im-icon-Home-2"></i>'],
 	];
 
 
@@ -79,7 +78,7 @@ if(document.getElementById("map") !== null){
 	L.tileLayer(
 		'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> Contributors',
-		maxZoom: 18,
+		maxZoom: 15,
 	}).addTo(map);
 
 
