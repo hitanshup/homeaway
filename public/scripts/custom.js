@@ -1241,7 +1241,7 @@ $(document).ready(function(){
 	        	$('.far-listing').show();
 	        	$('.very-far-listing').show();
 	        }
-	        $("#listing-count").text($('.listing-all-items').children(":visible").length);
+	        $("#listing-count").text($('.listing-all-items').children(":visible").length).trigger('change');
 	    }
 	});
 
@@ -1257,7 +1257,7 @@ $(document).ready(function(){
 	    onSlide : function( position, value ) {
 	        this.output.html( value );
 	        $('.listing-price').each(function(i) {
-	        	console.log($(this).text());
+	        	// console.log($(this).text());
 	        	if(parseInt($(this).text()) > value) {
 	        		// console.log("test");
 	        		$(this).parents('.listing-item-price').fadeOut();
@@ -1265,7 +1265,7 @@ $(document).ready(function(){
 	        		$(this).parents('.listing-item-price').show();
 	        	}
 	        });
-	        $("#listing-count").text($('.listing-all-items').children(":visible").length);
+	        $("#listing-count").text($('.listing-all-items').children(":visible").length).trigger('change');
 	    }
 	});
 
@@ -1291,7 +1291,7 @@ $(document).ready(function(){
 
 	$('#custom-main-search').click(function() {
 		var rooms = $("#select-room option:selected" ).text();
-		console.log(rooms);
+		// console.log(rooms);
 		switch(rooms) {
 			case "1":
 				window.location = 'listings.html';

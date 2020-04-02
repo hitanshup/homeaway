@@ -1,8 +1,8 @@
 
 /* ----------------- Start Document ----------------- */
 $(document).ready(function(){
-if(document.getElementById("map") !== null){
 
+function generateMap(n, isInit) {
 	// Touch Gestures
 	if ( $('#map').attr('data-map-scroll') == 'true' || $(window).width() < 992 ) {
 		var scrollEnabled = false;
@@ -15,8 +15,10 @@ if(document.getElementById("map") !== null){
 	}
 
 	// Map Init
-	window.map = L.map('map',mapOptions);
-	$('#scrollEnabling').hide();
+	if(isInit) {
+		window.map = L.map('map',mapOptions);
+		$('#scrollEnabling').hide();
+	}
 
 
 	// ----------------------------------------------- //
@@ -59,14 +61,19 @@ if(document.getElementById("map") !== null){
 	// ----------------------------------------------- //
 	// Locations
 	// ----------------------------------------------- //
+	
 	var locations = [
 		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'255 Sunview St, Waterloo', '3.5', '12'), 43.4742135,-80.5359378, 1, '<i class="im im-icon-Home-2"></i>'],
 		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'280 Lester St, Waterloo', '4', '12'), 43.4756084,-80.5379165, 2, '<i class="im im-icon-Home-2"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'318 Spruce St, Waterloo', '4', '12'), 43.4791059,-80.5286479, 2, '<i class="im im-icon-Home-2"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'519 King St, Waterloo', '4', '12'), 43.4957032,-80.5314105, 2, '<i class="im im-icon-Home-2"></i>'],
-		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'180 Regina St, Waterloo', '4', '12'), 43.4737392,-80.5246537, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'318 Spruce St, Waterloo', '4', '12'), 43.4791059,-80.5286479, 3, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'519 King St, Waterloo', '4', '12'), 43.4957032,-80.5314105, 4, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'180 Regina St, Waterloo', '4', '12'), 43.4737392,-80.5246537, 5, '<i class="im im-icon-Home-2"></i>'],
 		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'719 Albert St, Waterloo', '4', '12'), 43.4912018,-80.5412174, 2, '<i class="im im-icon-Home-2"></i>'],
-	];
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'12 Union St, Waterloo', '4', '12'), 43.4591264,-80.5175765, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'79 John St, Waterloo', '4', '12'), 43.4625393,-80.5160133, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 2 bath",'85 Young St, Waterloo', '4', '12'), 43.4529543,-80.4929851, 2, '<i class="im im-icon-Home-2"></i>'],
+		[ locationData('listings-single-page.html','images/listing-item-01.jpg',"2 bed 1 bath",'300 Regina St N, Waterloo', '4', '12'), 43.4781286,-80.5255372, 2, '<i class="im im-icon-Home-2"></i>'],
+	].slice(0, n);
 
 
 	// ----------------------------------------------- //
@@ -78,7 +85,7 @@ if(document.getElementById("map") !== null){
 	L.tileLayer(
 		'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> Contributors',
-		maxZoom: 15,
+		maxZoom: 18,
 	}).addTo(map);
 
 
@@ -173,7 +180,22 @@ if(document.getElementById("map") !== null){
 	var zoom = L.control.zoom(zoomOptions);
 	zoom.addTo(map);
 
+
+	
+
 }
+
+if(document.getElementById("map") !== null){
+	generateMap(10, true);
+	
+}
+
+$('#listing-count').on('change', function() {
+		map.remove();
+		map.off();
+		map = null;
+		generateMap($('.listing-all-items').children(":visible").length, true);
+});
 
 
 // ----------------------------------------------- //
